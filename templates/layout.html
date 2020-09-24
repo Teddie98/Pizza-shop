@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>KEIO - Pizza Ordering System</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='https://drive.google.com/uc?id=106kUUx9BdcGoSw8Xxku4LCS6unYuRXsp') }}">
+        <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                body {
+                    margin: 0;
+                }
+
+                /* Create two equal columns that floats next to each other */
+                .column {
+                    float: left;
+                }
+
+                .left {
+                  width: 25%;
+                  text-align: center;
+                  padding: 10px;
+                }
+
+                .image {
+                  width: 25%;
+                  text-align: center;
+                  padding: 40px 10px 10px;
+                }
+
+                .right {
+                  width: 75%;
+                  padding: 10px;
+                }
+
+                /* Clear floats after the columns */
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+        </style>
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>
